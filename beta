@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Control Example</title>
+    <style>
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <video id="myVideo" width="640" height="360" controls>
+            <source src="your-video-file.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="buttons">
+            <button onclick="playVideo()">Play</button>
+            <button onclick="pauseVideo()">Pause</button>
+        </div>
+    </div>
+
+    <script>
+        function playVideo() {
+            var video = document.getElementById("myVideo");
+            video.play();
+        }
+
+        function pauseVideo() {
+            var video = document.getElementById("myVideo");
+            video.pause();
+        }
+    </script>
+</body>
+</html>
