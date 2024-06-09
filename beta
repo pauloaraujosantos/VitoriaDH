@@ -3,41 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Control Example</title>
-    <style>
-        .container {
-            text-align: center;
-            margin-top: 50px;
-        }
-        .buttons {
-            margin-top: 20px;
-        }
-    </style>
+    <title>Test Page</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Video Page</h1>
-        <p>This is a simple webpage to demonstrate video controls.</p>
-        <video id="myVideo" width="640" height="360" controls>
-            <source src="vid_teste.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="buttons">
-            <button onclick="playVideo()">Play</button>
-            <button onclick="pauseVideo()">Pause</button>
-        </div>
-    </div>
-
-    <script>
-        function playVideo() {
-            var video = document.getElementById("myVideo");
-            video.play();
-        }
-
-        function pauseVideo() {
-            var video = document.getElementById("myVideo");
-            video.pause();
-        }
-    </script>
+    <h1>Welcome to My Test Page</h1>
+    <p>This is a simple test to verify HTML rendering.</p>
 </body>
 </html>
